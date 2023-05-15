@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pi_wallet/mainnet.dart';
+import 'package:pi_wallet/testpie.dart';
 
 class testpie extends StatefulWidget {
   const testpie({super.key});
@@ -15,7 +16,7 @@ class _testpieState extends State<testpie> {
 
         List<Widget> widgetOptions = <Widget>[
       Mainnet(),
-      Mainnet(),
+      MyWidget(),
 
     ];
     void onTabTapped(index) {
@@ -36,22 +37,22 @@ class _testpieState extends State<testpie> {
         showUnselectedLabels: true,
         currentIndex: selectedIndex,
         items: [
-          BottomNavigationBarItem(
-           icon: Icon(Icons.home),
-            label: "Home",
-          ),
+          // BottomNavigationBarItem(
+          //  icon: Icon(Icons.home),
+          //   label: "Home",
+          // ),
           BottomNavigationBarItem(
             icon: Icon(Icons.send_and_archive_outlined),
-            label: " Transaction",
+            label: "Pi Testnet",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.card_giftcard),
-            label: "cards",
+            label: "Pi Mainnet",
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person_2_outlined),
-            label: "Profile",
-          ),
+          // BottomNavigationBarItem(
+          //   icon: Icon(Icons.person_2_outlined),
+          //   label: "Profile",
+          // ),
         ],
       ),
     );
